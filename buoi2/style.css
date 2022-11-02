@@ -1,0 +1,48 @@
+h1 {
+    color: red;
+    font-size:50px;
+    text-align: center;
+}
+
+img {
+    align: center;
+    background-color: black;
+}
+
+h2 {
+    color: white;
+    background-color: blueviolet;
+}
+
+h3 {
+    color: blue;
+    background-color: aqua;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    height: 300px;
+}
+h4 {
+    font-size: 18px;
+    color: black;
+    background-color: rgb(108, 232, 108) ;
+}
+ 
+table {
+    border: 1px solid black;
+    border-collapse:collapse;
+    background-color:skyblue;
+    vertical-align: center;
+    text-align: left;
+    align: center;
+    width: 800px;
+    height: 200px;
+}
+
+tr, td {
+    border: 1px solid black;
+}
