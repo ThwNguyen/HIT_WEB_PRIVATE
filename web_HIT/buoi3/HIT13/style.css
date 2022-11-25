@@ -1,0 +1,46 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.main {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item {
+    height: 50px;
+    width: 50px;
+    background-color: orange;
+}
+
+.H {
+    display: flex;
+}
+
+.h1 {
+    align-self: center;
+}
+
+.I {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.T {
+    display: flex;
+    margin-right: 40px;
+}
+
+.S3 {
+    display: flex;
+}
+.S3_1 {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+}
