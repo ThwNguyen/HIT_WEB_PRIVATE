@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: center;
+}
+
+.header {
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav li {
+    padding-right: 50px;
+    list-style-type: none;
+}
+
+.nav ul li a {
+    text-decoration: none;
+}
+
+h1 {
+    padding-left: 10px;
+    font-size: 2em;
+    color: black;
+}
+
+
+
+.content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#start {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://tophinhanhdep.com/wp-content/uploads/2021/10/Coffee-Laptop-Wallpapers.jpg);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    color: white;
+}
+
+h2 {
+    font-size: 2.5em;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 50px;
+}
+
+p {
+    max-width: 50%;
+    padding: 50px;
+    text-align: center;
+    font-size: x-large;
+}
+
+.button {
+    border-radius: 30px;
+    height: 50px;
+    width: 200px;
+    background-color: orange;
+    font-size: larger;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 10px;    
+    margin: 20px;
+}
+
+.button:active {
+    background-color: brown;
+}
+
+#about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    background-color: rgb(212, 89, 22);
+    height: 80vh;
+    width: 100%;
+}
+
+#about .button {
+    background-color: wheat;
+}
+
+span {
+    font-weight: 700;
+    font-size: 3em;
+    color: orange;
+}
+
+#service{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon {
+    display: flex;
+    padding-top: 70px;
+}
+
+.icon p {
+    font-size: medium;
+    max-width: 100%;
+    max-width: 200px;
+}
+
+.study {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.material-symbols-outlined {
+    color: orangered;
+}
+
+#portfilio {
+    display: flex;
+    flex-direction: column;
+    height: 150vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0;
+    /* background-color: blueviolet; */
+}
+
+.port-images {
+    display: flex;
+    height: 80vh;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.port-img {
+    margin:0;
+    height: 50%;
+    width: 33.3333%;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+}
+
+.port-img:hover .port-img-cover {
+    opacity: 1;
+}
+
+.port-img-cover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: orangered !important;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+    color: white;
+    text-align: center;
+    opacity: 0;
+}
+
+.under {
+    background-color: rgb(45, 179, 179);
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#portfilio h2 {
+    margin: 50px;
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.former {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+
+input {
+    height: 30px;
+    width: 100%;
+    margin: 10px;
+}
+
+textarea {
+    height: 200px;
+    width: 100%;
+    margin-left: 10px;
+}
+
+.phone {
+    margin: 20px;
+}
