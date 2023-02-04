@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+}
+
+.buy {
+    height: 56px;
+    display: flex;
+    background-color: #262626;
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.buy1 {
+    width: 12.5%;
+}
+
+.buy1>img {
+    width: 100%;
+    height: 100%;
+}
+
+.buy2 {
+    width: 87.5%;
+    display: flex;
+    justify-content: end;
+    margin-top: 10px;
+    margin-right: 16px;
+}
+
+.buy2>h3:hover {
+    background-color: rgba(87, 124, 30, 0.781);
+}
+
+.buy2>h3 {
+    width: 100px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: greenyellow;
+    color: whitesmoke;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.menu {
+    display: flex;
+    margin-top: 56px;
+    height: 100px;
+    background-color: #0B0807;
+    border-bottom: 2px dotted wheat;
+}
+
+.logo {
+    width: 28%;
+}
+
+.logo>img {
+    width: 100%;
+    height: 100%;
+}
+
+.sub {
+    width: 58%;
+    display: flex;
+    position: absolute;
+    top: 15px;
+    left: 50%;
+
+}
+
+.sub>ul {
+    list-style: none;
+    display: flex;
+}
+
+.sub>ul>li>a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 16px;
+}
+
+.sub>ul>li {
+    max-width: 50%;
+    height: 16px;
+    border-right: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    padding: 20px;
+}
+
+.box {
+    width: 24%;
+}
+
+.box>img {
+    width: 100%;
+    height: 100%;
+}
+
+.header {
+    height: 390px;
+    background-image: url(https://cdn.discordapp.com/attachments/995889682418249751/1062365546403868692/image.png);
+    background-size: contain;
+    background-size: cover;
+    position: relative;
+}
+
+.content {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    right: 0;
+    height: 250px;
+    background-color: rgba(6, 5, 5, 0.753);
+    text-align: center;
+}
+
+.content>span {
+    color: #b99563 !important;
+    font-family: 'Sacramento', cursive;
+    font-size: 18px;
+    margin-top: 48px;
+    letter-spacing: 1px;
+}
+
+.content>p {
+    color: gray;
+    font-size: 16px;
+}
+
+.foot {
+    height: 42px;
+    background-color: #0B0807;
+    margin-top: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.block {
+    width: 100%;
+    height: 70%;
+}
+
+.block>img {
+    width: 100%;
+    height: 100%;
+}
