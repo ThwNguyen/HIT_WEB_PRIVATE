@@ -7,45 +7,35 @@
 .container {
     width: 100%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 #header {
-    position: fixed;
     display: flex;
     flex-direction: column;
-    padding-left: 30px;
-}
-
-a {
-    color: #fff;
-    text-transform: uppercase;
+    width: 100%;
+    height: 50%;
+    background-image: url(https://cdn.discordapp.com/attachments/995889682418249751/1062365546403868692/image.png);
+    background-repeat: none;
+    background-size: cover;
 }
 
 .logo {
     display: flex;
-    align-items: center;
-    margin-top: 0;
     width: 100%;
-    height: 70px;
-    margin-top: 0;
-    justify-content: space-between;
+    height: 25%;
+    background-color: #000;
 }
 
 .nav {
     display: flex;
-    position: absolute;
-    left: 60%;
-    padding-top: 40%;
-}
-
-img {
-    width: 100%;
-    height: 100%;
+    padding-left: 30%;
 }
 
 .logo>img {
-    max-width: 10%;
-    height: 80%;
+    max-width: 30%;
+    height: fit-content;
 }
 
 .discount>img {
@@ -69,6 +59,8 @@ ul.nav {
     text-indent: 20px;
     padding: 0px 20px;
     line-height: 50px;
+    text-transform: uppercase;
+    color: whitesmoke;
 }
 
 .nav>li>a:hover {
@@ -77,11 +69,14 @@ ul.nav {
 }
 
 ul.nav>li>ul.subnav>li {
-    position: absolute;
+    position: relative;
     list-style-type: none;
     height: 50px;
     width: 150px;
-    /* background-color: #666060; */
+}
+
+ul.nav>li>ul.subnav>li:hover {
+    background-color: #666060;
 }
 
 ul.nav>li>ul.subnav li a {
@@ -114,8 +109,12 @@ ul.nav>li>ul.subnav li a:hover {
     display: block;
 }
 
-ul.nav>li>ul.subnav>li {
+.sub {
     position: relative;
+}
+
+.subnav {
+    position: absolute;
 }
 
 ul.nav>li>ul.subnav>li ul {
@@ -125,8 +124,6 @@ ul.nav>li>ul.subnav>li ul {
     left: 200px;
     top: 0;
     display: none;
-    /* background-color: #666060;\
-     */
 }
 
 ul.nav>li>ul.subnav>li:hover ul {
@@ -135,7 +132,7 @@ ul.nav>li>ul.subnav>li:hover ul {
 
 .bag {
     display: flex;
-    position: absolute;
+    padding-left: 10%;
 }
 
 ul.bag>li {
@@ -144,9 +141,10 @@ ul.bag>li {
 }
 
 ul.bag>li>a {
+    text-decoration: none;
+    color: #f3efef;
     position: relative;
     font-size: 15px;
-    color: #fff;
     padding: 10px;
 }
 
@@ -163,43 +161,98 @@ ul.bag>li>a>span {
     padding: 2px 0px 0px 1px;
 }
 
-.content {
-    color: #fff;
-    padding-left: 8%;
-    height: fit-content;
+.headcontent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: rgba(6, 5, 5, 0.753);
 }
 
-span {
+.headcontent>span {
     color: yellow;
     font-family: 'Dancing Script', cursive;
     font-weight: 100;
+    font-size: 1em;
+    padding-top: 10%;
 }
 
-h1 {
-    font-family: 'Rubik Mono One', sans-serif;
-    padding: 10px;
-    font-size: 50px;
+.headcontent>p {
+    max-width: 60%;
+    color: whitesmoke;
+    opacity: 0.5;
+    text-align: center;
+    padding-bottom: 10%;
 }
 
-h2 {
-    font-family: 'Comfortaa', cursive;
-    font-size: 30px;
-    padding-bottom: 10px;
+.foot {
+    width: 100%;
+    height: 15%;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.foot>h3>a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.items {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 2.5%;
+}
+
+.subitem {
+    margin: 2.5%;
+    width: 30%;
+    list-style: none;
+    float: none;
+    display: inline-block;
+    vertical-align: top;
+    border: 1px solid #aaaaaa;
+}
+
+.phara {
+    max-width: 100%;
+}
+
+.cover {
+    margin: 0;
+    height: 50%;
+    width: 30%;
+    cursor: pointer;
+    overflow: hidden;
+    position: absolute;
+    opacity: 0;
+    color: whitesmoke;
+}
+
+.subitem>img {
+    height: 50%;
+    width: 100%;
+}
+
+.phara>span {
+    color: rgb(185, 185, 54);
+    font-size: medium;
+    text-transform: uppercase;
+}
+
+.phara>p {
+    padding: 5% 0 5% 0;
 }
 
 .button {
-    display: flex;
-    max-width: 40%;
-    padding-top: 10px;
-    justify-content: space-between;
+    padding-bottom: 5%;
 }
 
-button:hover {
-    color: #ff0000;
-    background-color: antiquewhite;
-}
-
-button {
-    border: 2px solid #fff;
-    height: 25px;
+.button>a {
+    text-decoration: none;
+    color: rgba(6, 5, 5, 0.753);
 }
