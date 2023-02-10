@@ -1,0 +1,380 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+.buy {
+    height: 10%;
+    display: flex;
+    background-color: #262626;
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    font-family: 'Open Sans', sans-serif;
+}
+.buy-1 {
+    width: 12.5%;
+}
+.buy-1 > img {
+    width: 100%;
+    height: 100%;
+}
+.buy-2 {
+    width: 87.5%;
+    display: flex;
+    justify-content: end;
+    margin-top: 10px;
+    margin-right: 16px;
+}
+.buy-2 > h3:hover {
+    background-color: rgba(87, 124, 30, 0.781);
+}
+.buy-2 > h3 {
+    width: 100px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: greenyellow;
+    color: whitesmoke;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.menu {
+    display: flex;
+    margin-top: 54px;
+    height: 100px;
+    background-color: #0B0807;
+    border-bottom: 2px dotted wheat;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.menu-1 {
+    width: 28%;
+    margin-left: -100px;
+}
+.menu-1 > img {
+    width: 100%;
+    height: 100%;
+}
+.menu-2  {
+    width: 80%;  /*suaaaaa*/
+    
+}
+.menu-2 > ul {
+    list-style: none;
+    display: flex;
+
+}
+.menu-2 > ul > li > a {
+    text-decoration: none;
+    color: whitesmoke;
+    
+}
+.menu-2 > ul > li {
+    width: 16.6%;
+    height: 16px;
+    border-right: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    font-size: 14px; /*Suaaaaaaa*/
+}
+.menu-3 {
+    margin: auto;
+    width: 20%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 8%;
+    letter-spacing: 20px;
+}
+
+.header {
+    height: 390px;
+    background-image: url(banhmy.png);
+    position: relative;
+}
+.content-in-header {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    right: 0;
+    height: 250px;
+    background-color: rgba(6, 5, 5, 0.753);
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+.chu-mau {
+    color: #b99563 !important;
+    font-family: 'Sacramento', cursive; 
+    font-size: 24px;
+    letter-spacing: 0.9px;   
+}
+.content-in-header > p {
+    color: rgb(203, 202, 202);
+    
+    /* font-size: 16px; */
+}
+.end-in-header {
+    height: 42px;
+    background-color: #0B0807;
+    margin-top: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+}
+
+
+
+
+
+.contener{
+    display: flex;
+    flex-wrap:  wrap;
+    width: 100%;
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+    
+}
+.shop-girl-coca{
+    border-style:none;
+    box-shadow: 1px 1px 8px 2px rgb(231, 230, 230);
+    width: 260px;
+    margin-top: 90px;
+    margin-left: 45px;
+}
+.image{
+    width: 99%;
+}
+.sale{
+    border-style: none;
+    border-radius: 2px;
+    background-color: #b99563;
+    width: 19%;
+    margin-left: 190px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 2px;
+    font-size: 14px;
+    margin-top: -260px;
+}
+
+.shop-girl-coca__1{
+    position: relative;
+
+}
+
+.shop-girl-coca__12{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #b99563;
+}
+:hover.shop-girl-coca__12{
+    opacity: 0.8;
+    
+}
+.shop-girl-coca__122{
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
+
+.shop-girl-coca__21{
+    margin-left: 25px;
+    height: 100px;
+}
+.star{
+    padding-top: 8px;
+    padding-bottom: 5px;
+    color: #b99563;
+    display: flex;
+    font-size: 12px;
+    width: 170px;
+}
+
+.shop-girl-coca__11{
+    display: flex;
+    flex-direction: column;
+}
+
+.shop25{
+    display: none;
+    color: #b99563 !important;
+    font-family: 'Sacramento', cursive;
+    font-size: 17px;
+    letter-spacing: 0.9px;
+    opacity: 0;
+    transition: .2s ease;
+}
+span:hover + .shop25 {
+    display: block;
+    opacity: 1;
+}
+
+
+
+
+
+/* 
+Hai */
+.footer {
+    width: 100%;
+    background-image: url('https://eyecix.com/html/hotmeal/images/footer-back-transparent.png');
+    height: 700px;
+
+}
+.footer-1{
+    text-align: center;
+}
+.footer p {
+    text-align: center;
+    color: #849493;
+    font-size: 15px;
+    margin-top: 4px;
+    font-family: 'Open Sans', sans-serif; /*suaaa*/
+    font-style: normal;
+    line-height: 1.5;
+}
+.footer-2 {
+    display: flex;
+    margin-left: 12.5%;
+    margin-top: 40px;
+    
+}
+
+.end-1,.end-2,.end-3 {
+    line-height: 1.5;
+    width: 30%;
+}
+.footer h3 {
+    color: aliceblue;
+    font-size: large;
+}
+.footer .khac {
+    font-size: 15px;
+    color: #849493;
+}
+.price {
+    padding-bottom: 30px;
+    border-bottom: 2px dashed rgba(255,255,255,0.1);
+}
+.end-2 .khac {
+    margin-top: 30px !important;
+}
+.be {
+    display: flex;
+}
+.nho-1,.nho-2 {
+    width: 50%;
+}
+.end-3 input {
+    width: 100%;
+    height: 40px;
+    border: 2px dashed rgba(255,255,255,0.1);
+    margin-top: 30px;
+}
+
+
+@media (max-width: 768px){
+    .buy{
+    width: 100%;
+    }
+    .buy-1{
+        width: 30%;
+        height: 90%;
+    }
+    .menu{
+        padding-top: 12px;
+        width: 100%;
+    }
+    .menu-1{
+        width: 60%;
+    }
+    .menu-2{
+        width: 100%; 
+        margin-left: -15px; 
+    }
+    .menu-2 > ul > li > a{
+        font-size: 12px;
+    }
+    .footer-2{
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .footer{
+        height: 1100px;
+    }
+    .end-1,
+    .end-2,
+    .end-3{
+        width: 42%; 
+    }
+    .end-2{
+        margin: 0 5%;
+    }
+ 
+    .shop-girl{
+        margin: 0;
+        width: 47%;
+    }
+    
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px){
+     .buy{
+        height: 7%;
+    }
+    .buy-1{
+        width: 30%;
+        height: 80%;
+    }
+    .buy-2{
+        margin: 3%
+    }
+    .menu{
+        padding-top: 12px;
+        width: 100%;
+    }
+    .menu-1{
+        width: 60%;
+    }
+    .menu-2{
+        width: 100%; 
+        margin-left: -15px; 
+    }
+    .menu-2 > ul > li > a{
+        font-size: 13px;
+    }
+    .shop-girl-coca__1{
+        width: 123%;
+       margin: 0 auto;
+    }
+    .shop-girl-coca__2{
+        width: 123%;
+        margin: 0 auto;
+    }
+   
+   
+}
+
