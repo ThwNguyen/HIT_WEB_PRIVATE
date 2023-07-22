@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RSA encryption/decryption</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="containor">
+        <div class="main_top_content">
+            <h1>Keys</h1>
+            <div class="main_top_content_key">
+                <label for="">Public key: </label>
+                <textarea name="" id="public_key" cols="50" rows="5"></textarea>
+
+                <label for="">Private key: </label>
+                <textarea name="" id="private_key" cols="50" rows="5"></textarea>
+            </div>
+            <!-- <button id="generate_key" onclick="showKey()">Generate Key</button> -->
+        </div>
+
+        <div class="main_bottom_content">
+            <div class="sub_btn_left">
+                <h1>Encryption</h1>
+                <div class="sub_btn_left_1">
+                    <label for="">Plaintext: </label>
+                    <textarea name="content" class="main_left_content_input" cols="30" rows="6"></textarea>
+                    <button onclick="activateInput()" class="btn_main_left_content_file">File</button>
+                    <input type="file" id="main_left_content_btn_sub_file" style="display:none"
+                        onchange="parseWordDocxFile(this)">
+                </div>
+                <button onclick="doEncrypt()">Encrypt</button>
+                <div class="sub_btn_left_2">
+                    <label for="">Encrypted: </label>
+                    <textarea name="content" id="main_left_content_after_input" cols="30" rows="6"></textarea>
+                    <div class="sub_btn_left_2_wrapper">
+                        <button onclick="moveValue()" class="btn main_left_content_btn_move">Transfer</button>
+                        <button onclick="saveFile()" class="btn main_left_content_btn_save">Save</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sub_btn_right">
+                <h1>Decryption</h1>
+                <div class="sub_btn_right_1">
+                    <label for="">Ciphertext: </label>
+                    <textarea name="content" class="main_right_content_input" cols="30" rows="6"></textarea>
+                    <button onclick="activateInput2()" class="btn main_right_content_btn">File</button>
+                    <input type="file" id="main_right_content_btn_sub_file" style="display:none"
+                        onchange="parseWordDocxFile2(this)">
+                </div>
+                <button onclick="doDecrypt()">Decrypt</button>
+                <div class="sub_btn_right_2">
+                    <label for="">Decrypted: </label>
+                    <textarea name="decrypted" id="decryption" cols="30" rows="6"></textarea>
+                    <button onclick="saveFile()" class="btn main_left_content_btn_save">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <script src="path/to/mammoth.js"></script> -->
+
+    <script src="script.js"></script>
+</body>
+
+</html>
